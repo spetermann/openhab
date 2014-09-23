@@ -1,3 +1,7 @@
+/* GoogleTTS Test Area */
+Switch sprich_btn "Sprich"
+
+
 Group All
 Group gGF 		(All)
 Group gFF 		(All)

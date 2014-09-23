@@ -1,6 +1,7 @@
 sitemap demo label="Main Menu"
 {
 	Frame {
+		Switch item=sprich_btn
 		Group item=gFF label="First Floor" icon="firstfloor"
 		Group item=gGF label="Ground Floor" icon="groundfloor"
 		Group item=gC label="Cellar" icon="cellar"	
@@ -15,9 +16,9 @@ sitemap demo label="Main Menu"
 			}
 			Frame {
 				Switch item=Weather_Chart_Period label="Chart Period" mappings=[0="Hour", 1="Day", 2="Week"]
-				Chart item=Weather_Chart period=h refresh=6000 visibility=[Weather_Chart_Period==0, Weather_Chart_Period=="Uninitialized"]
-				Chart item=Weather_Chart period=D refresh=30000 visibility=[Weather_Chart_Period==1]
-				Chart item=Weather_Chart period=W refresh=30000 visibility=[Weather_Chart_Period==2]
+				Chart item=Weather_Chart period=h refresh=600 visibility=[Weather_Chart_Period==0, Weather_Chart_Period=="Uninitialized"]
+				Chart item=Weather_Chart period=D refresh=3600 visibility=[Weather_Chart_Period==1]
+				Chart item=Weather_Chart period=W refresh=3600 visibility=[Weather_Chart_Period==2]
 			}
 		}
 	}
@@ -28,6 +29,8 @@ sitemap demo label="Main Menu"
 		Text label="Group Demo" icon="firstfloor" {
 			Switch item=Lights mappings=[OFF="All Off"]
 			Group item=Heating
+			Switch item=Heating mappings=[OFF="All Off"]
+			Switch item=Heating mappings=[ON="All On"]
 			Group item=Windows
 			Text item=Temperature
 		}

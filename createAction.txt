@@ -1,0 +1,4 @@
+mvn archetype:generate -B -DarchetypeGroupId=org.openhab.archetype -DarchetypeArtifactId=org.openhab.archetype.action -DarchetypeVersion=1.4.0 -Dauthor=<author> -Dversion=<target-version-of-binding> -DartifactId=org.openhab.action.<action-name-in-small-caps> -Dpackage=org.openhab.action.<action-name-in-small-caps> -Daction-name=<action-name-in-camel-case>
+
+Example:
+mvn archetype:generate -B -DarchetypeGroupId=org.openhab.archetype -DarchetypeArtifactId=org.openhab.archetype.action -DarchetypeVersion=1.6.0-SNAPSHOT -Dauthor=cc -Dversion=1.6.0 -DartifactId=org.openhab.action.googletts -Dpackage=org.openhab.action.googletts -Daction-name=GoogleTTS
